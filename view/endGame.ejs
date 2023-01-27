@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <!-- Display the winner and their score -->
+    <h1> The winner is.....
+        <%= `${winner.name} with ${winner.points}` %>! Congratulations!
+    </h1>
+    <!-- Display the loser and their score -->
+    <h2>
+        Good effort <%= `${loser.name} with ${loser.points}` %>
+    </h2>
+    <!-- Create a link back to the first page so they can play again -->
+    <a id="turn-link" href="/">Click here to play again!</a>
+</body>
+
+</html>

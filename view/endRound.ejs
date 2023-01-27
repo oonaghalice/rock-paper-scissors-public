@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <!-- Display the current scores after each round -->
+    <h1> The scores after that round are:
+
+        <%= `${currentPlayer.name}`%> with <%=`${currentPlayer.points}` %> points and <%= `${otherPlayer.name}`%>
+                    with <%=`${otherPlayer.points}` %> points
+    </h1>
+    <!-- Create a link back to the round page so they can continue with the game -->
+    <a id="turn-link" href="/round">Next round!</a>
+</body>
+
+</html>

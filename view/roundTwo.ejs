@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rounds</title>
+</head>
+
+<body>
+    <!-- Round 2 with player 2 -->
+    <h1>
+        <%= name %>!
+    </h1>
+    <h2>Make your choice...</h2>
+    <h4>Remember: Rock beats scissors, paper beats rock and scissors beats paper</h4>
+    <form action="/endRound" method="post">
+        <!-- When they click on one of these buttons their choice is stored -->
+        <input id="Rock" type="submit" value="Rock" name="choice">
+        <input id="Paper" type="submit" value="Paper" name="choice">
+        <input id="Scissors" type="submit" value="Scissors" name="choice">
+    </form>
+</body>
+
+</html>
